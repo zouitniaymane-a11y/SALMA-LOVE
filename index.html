@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For Salma ❤️</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #ff758c, #ff7eb3);
+            text-align: center;
+            font-family: Arial, sans-serif;
+            color: white;
+            padding-top: 100px;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 45px;
+        }
+
+        p {
+            font-size: 22px;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: white;
+            color: #ff4b5c;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            margin-top: 30px;
+        }
+
+        button:hover {
+            background-color: #ff4b5c;
+            color: white;
+        }
+
+        .heart {
+            position: absolute;
+            color: red;
+            font-size: 20px;
+            animation: float 5s linear infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0); opacity: 1; }
+            100% { transform: translateY(-800px); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>kanbgheeeekkkk</h1>
+    <p id="message">
+
+    <button onclick="showLove()">Click Me 💕</button>
+
+    <script>
+        function showLove() {
+            document.getElementById("message").innerHTML =
+                "Salma, you are the best thing that ever happened to me ALHOOOOOB❤️<br>I love you , NBGHEEEK more every day 💕";
+
+            createHearts();
+        }
+
+        function createHearts() {
+            setInterval(() => {
+                const heart = document.createElement("div");
+                heart.classList.add("heart");
+                heart.innerHTML = "❤️";
+                heart.style.left = Math.random() * 100 + "vw";
+                heart.style.fontSize = Math.random() * 20 + 15 + "px";
+
+                document.body.appendChild(heart);
+
+                setTimeout(() => {
+                    heart.remove();
+                }, 5000);
+            }, 300);
+        }
+    </script><br><br>
+    <style></style>
+I love you forever  - Aymane
+</body>
+</html>
